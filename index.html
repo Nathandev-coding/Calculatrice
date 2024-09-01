@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<style>
+    body{
+        background-color: #ccc;
+    }
+    .button input{
+        width: 60px;
+        height: 60px;
+        margin: 14px;
+        border: none;
+        outline: none;
+        background: transparent;
+        box-shadow: -8px -8px 15px rgb(255, 255, 255, 0.1),5px 5px 15px rgb(0, 0, 0, 0.2);
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+       
+    }
+    .button .egal{
+        width: 155px;
+        background: cyan;
+        color: gray;
+        border-radius: ;
+    }
+
+    .button .operator{
+        color: cyan;
+    }
+
+</style>
+<body>
+    <!------------corp de la calculatrice-------------->
+   
+       <div class="w-100 min-vh-100 d-flex justify-content-center align-items-center ">
+        <div class="p-3 " style="border-radius: 18px ;background: rgb(65, 62, 62);">
+            <form action="">
+                <div class="dispay mb-3" style="border: 1px solid rgb(165, 162, 162);">
+                    <input type="text" name="dispay" id="" style="font-size: 45px;text-align: right;color: white;border: none;outline: none;background: transparent;width: 335px;">
+
+                </div>
+                <div class="button">
+                    <input type="button" value="AC" onclick="dispay.value =''" class="operator">
+                    <input type="button" value="DE" onclick="dispay.value = dispay.value.toString().slice(0,-1) "  class="operator">
+                    <input type="button" value="." onclick="dispay.value += '.'"  class="operator">
+                    <input type="button" value="/" onclick="dispay.value +='/'"  class="operator">
+                </div>
+                <div class="button">
+                    <input type="button" value="7" onclick="dispay.value +='7'" >
+                    <input type="button" value="8" onclick="dispay.value +='8'">
+                    <input type="button" value="9" onclick="dispay.value +='9'">
+                    <input type="button" value="*" onclick="dispay.value +='*'"  class="operator">
+                </div>
+                <div class="button">
+                    <input type="button" value="4" onclick="dispay.value +='4'">
+                    <input type="button" value="5" onclick="dispay.value +='5'">
+                    <input type="button" value="6" onclick="dispay.value +='6'">
+                    <input type="button" value="-" onclick="dispay.value +='-'"  class="operator">
+                </div>
+                <div class="button">
+                    <input type="button" value="1" onclick="dispay.value +='1'">
+                    <input type="button" value="2"onclick="dispay.value +='2'">
+                    <input type="button" value="3"onclick="dispay.value +='3'">
+                    <input type="button" value="+"onclick="dispay.value +='+'"  class="operator">
+                </div>
+                <div class="button">
+                    <input type="button" value="0"onclick="dispay.value +='0'">
+                    <input type="button" value="00"onclick="dispay.value +='00'">
+                   
+                    <input type="button" value="=" onclick="dispay.value = eval(dispay.value)" class="egal">
+                </div>
+            </form>
+
+         
+                
+            </div>
+
+        </div>
+
+       </div>
+       <div class="footer w-100">
+        <div class="w-100 d-flex justify-content-center py-3">
+            <div class="row">
+                <div class="col">
+                    <p> <p> &copy; 2024. Tout droit Reserver.|concu par nathan tshimbalange </p></p>
+                </div>
+            </div>
+        </div>
+      
+       
+
+       
+    
+    
+</body>
+</html>
